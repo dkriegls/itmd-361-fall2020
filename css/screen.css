@@ -323,6 +323,12 @@ tr .firstrow {
   padding-bottom: 15px;
   padding-top: 15px;
 }
+tr .secondrow {
+	border-right: none;
+	width: 80px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
 td a {
 	font-weight: 700;
 	text-align: center;

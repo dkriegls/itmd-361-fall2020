@@ -323,6 +323,12 @@ tr .firstrow {
   padding-bottom: 15px;
   padding-top: 15px;
 }
+tr .secondrow {
+	border-right: none;
+	width: 80px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
 td a {
 	font-weight: 700;
 	text-align: center;
@@ -462,7 +468,8 @@ td {
   }
   #essential-references {
     width: 42.5%;
-    padding-left: 50%;
+    padding-left: 60%;
+    z-index: 100;
   }
 }
 

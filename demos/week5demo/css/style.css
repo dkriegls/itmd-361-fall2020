@@ -2,8 +2,12 @@
   color: red;
 }
 
-#main-content {
+main {
   background-color: pink;
+}
+
+li {
+  background-color: red;
 }
 
 #blue {
@@ -22,7 +26,7 @@ h1 {
   padding: 50px 10px 5px 10px;
   margin: 5px 10px;
   width: 35%;
-  border: 5px solid red;
+  border: 5px dashed red;
   overflow: hidden;
   border-radius: 50% 20%;
   

@@ -1,5 +1,5 @@
 nav#horz1 ul {
-  list-style-type: square;
+  list-style-type: none;
   padding: 0;
   margin: 0;
   overflow: hidden;
@@ -26,16 +26,11 @@ nav#horz1 ul li a:hover {
   background-color: #800;
   color: yellow;
   border-radius: 20px;
-
-
 }
 
 .clear {
   clear: both;
 }
-
-
-
 
 nav#horz2 {
   background-color: #777;
@@ -97,9 +92,6 @@ nav#horz3 ul li a {
 nav#horz3 ul li a:hover {
   text-decoration: underline red;
 }
-
-
-
 
 nav#vert ul {
   list-style-type: none;

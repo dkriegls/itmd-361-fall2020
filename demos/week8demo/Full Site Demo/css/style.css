@@ -39,19 +39,73 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', end
 	position: relative;
 }
 
-
 .container {
-	width: 960px;
-	margin: 0 auto;
+	width: 100%;
 	overflow: hidden;
+}
+
+#second-nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#second-nav li {
+	float: left;
+}
+#second-nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#second-nav li {
+	float: left;
+}
+
+#second-nav li::before {
+	content: "|";
+	color: #fff;
+}
+
+#second-nav li:first-child::before {
+	content: "";
+}
+
+#second-nav li a {
+	color: #fff;
+  font-size: 0.8em;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+#second-nav li a:hover {
+	text-decoration: underline;
+}
+
+#second-nav li::before {
+	content: "|";
+	color: #fff;
+}
+
+#second-nav li a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+#second-nav li a:hover {
+	text-decoration: underline;
 }
 
 #main-navbar {
 	background-color: blue;
-}
-
-#content-wrapper {
-	background-color: #aaa;
 }
 
 #navbar-container {
@@ -85,59 +139,50 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', end
 	background-color: #000;
 }
 
-#second-nav {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	top: 10px;
-	right: 10px;
+#content-wrapper {
+	background-color: maroon;
 }
 
-#second-nav li {
-	float: left;
+#main-content {
+  font-family: electra;
+  color: white;
+  font-size: 1.2em;
+  padding:5px;
 }
 
-#second-nav li::before {
-	content: "|";
-	color: #fff;
-}
-
-#second-nav li:first-child::before {
-	content: "";
-}
-
-#second-nav li a {
-	color: #fff;
-	text-decoration: none;
-	margin: 0 10px;
-}
-
-#second-nav li a:hover {
-	text-decoration: underline;
-}
-
-a[href$=".pdf"] {
-
-}
-
-#file:after {
-	content: "";
-	display: inline-block;
-	width: 32px;
-	height: 32px;
+#sidebar {
+  font-family: electra;
+  color: white;
+  font-size: 0.8em;
+  padding:5px;
 }
 
 body {
-	background-image: url('../img/gstripe.png');
+	background-image: url('../img/sheep.png');
 }
 
-@media screen and (min-width: 600px) {
-
-	body {
-		background-image: url('../img/repeating.png');
+@media screen and (min-width: 900px) {
+  body {
+    background-image: url('../img/repeating.png');
   }
 
+  .container {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  #main-content {
+    box-sizing: border-box;
+    width: 80%;
+    float: left;
+  }
+
+  #sidebar {
+    box-sizing: border-box;
+    width: 20%;
+    float: left;
+  }
 }
 
 

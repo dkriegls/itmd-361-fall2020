@@ -1,11 +1,5 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Exercise 17-1: Transitions</title>
-<style>
 body {
-  font-family: Tahoma, Verdana, Geneva, sans-serif;
+  font-family: Tahoma, Verdana, sans-serif;
   margin: 6em;
   font-weight: bold;
 }
@@ -31,9 +25,11 @@ a {
   text-shadow: #666 .1em .1em .1em;
   box-shadow: 0 5px 3px rgba(0,0,0,.5);
   position: relative;
+/*Start Transition decelerations*/
   transition: background-color 2.2s, border-color 0.2s, top .2s, box-shadow 0.2s;
 }
 
+  /*transition end states*/
 a:hover, a:focus {
   background-color: #fdca00;
   border-color: #fda700;
@@ -42,16 +38,3 @@ a:active {
   top: 3px;
   box-shadow: 0 1px 2px rgba(0,0,0,.5);
 }
-</style>
-
-</head>
-
-<body>
-  <ul>
-    <li><a href="">Men</a></li>
-    <li><a href="">Women</a></li>
-    <li><a href="">Kids</a></li>
-    <li><a href="">SALE</a></li>
-  </ul>
-</body>
-</html>
